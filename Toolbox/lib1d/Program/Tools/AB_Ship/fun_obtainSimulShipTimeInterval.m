@@ -1,0 +1,9 @@
+function [t1,t2,dt,lambda]=fun_obtainSimulShipTimeInterval(Tp,Ntp,Ndt,D,LtoS)
+ww=2*pi./Tp;
+kk=invOmExact(ww,D);
+Ug=UgExact(kk,D);
+TtoS=LtoS./Ug;
+t1=-TtoS;
+t2=Ntp*Tp;
+lambda=2*pi./kk;
+dt=Tp/Ndt;

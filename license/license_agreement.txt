@@ -1,0 +1,4 @@
+© Copyright of HAWASSI software is with LabMath-Indonesia, an independent research institute under the Foundation Yayasan AB in Bandung, Indonesia. 
+The software has been developed over the past years in collaboration with the University of Twente, Netherlands, with additional financial support of Netherlands Technology Foundation STW and Royal Netherlands Academy of Arts and Sciences KNAW.
+ 
+By downloading and using the software you agree that Yayasan AB is not liable for any loss or damage arising out of the use of the Software. Although much care is taken to arrive at trustful results of simulations with HAWASSI, Yayasan AB cannot be held responsible for any result of simulations obtained with the software, or consequential actions or calculations that are based on the results, e.g. because of possible bugs, wrong use of the software, or other causes

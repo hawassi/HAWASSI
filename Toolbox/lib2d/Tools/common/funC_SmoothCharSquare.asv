@@ -1,0 +1,23 @@
+function [cfSA,fbl]=funC_SmoothCharSquare(dom,fbl)
+dampdata=fbl.param;
+cfSA=ones(size(dom.XX));
+fbl.N=length(dampdata(:,1));
+fblChar=zeros(size(dom.XX));
+
+
+       fbl.l=cell2mat(dampdata(i,2));fbl.r=cell2mat(dampdata(i,3));
+        fbl.b=cell2mat(dampdata(i,4));fbl.t=cell2mat(dampdata(i,5));
+        cfSAii=funC_cfSA2d(dom.X,dom.Y,fbl); 
+        
+        indxl =funC_closest(dom.X,dom.X(1)+fbl.l); indxr   =funC_closest(dom.X,dom.X(end)-fbl.r);
+        indyb =funC_closest(dom.Y,dom.Y(1)+fbl.b); indyt   =funC_closest(dom.Y,dom.Y(end)-fbl.t);
+        
+        
+        LL(:,1:indxl)=fbl.l;LL(:,indxr:end)=fbl.r;
+        LL(1:indyb,:)=fbl.b;LL(indyt:end,:)=fbl.t;
+        fblCharii=(1-cfSAii)./LL;
+  
+    cfSA=cfSA.*cfSAii;
+    fblChar=fblChar+fblCharii;
+end
+fbl.char=fblChar;
