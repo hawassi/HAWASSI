@@ -1,0 +1,93 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 14.12.2017 time:  14h.9min.
+************************************************************************************
+%
+Project name: 2dB003AccessChannel
+%
+User note   :linear_PRB wall 1__bottomfric 0.02 custom1_target spectrum_T01
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS1
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : User-defined (signal)
+Significant wave Height (Hs)  : 3[m]
+Peak period (Tp)           : 9.424[s]
+Mean period (Tm01)     : 6.246[s]
+Depth at influxing (h)    : 22.1[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.667[rad/s]
+      Mean frequency                           : 1.006[rad/s]
+      Peak wave-number (kp)              : 0.054
+      Peak wave-length                        : 115.634[m]
+      Peak phase speed                      : 12.27[m/s]
+      Peak group speed                      : 8.826[m/s]
+      Steepness (kp*(Hs./2))                : 0.082
+      Relative wave-length(lambda/h) : 5.2323(Intermediate depth)
+                                                 (kp*h)  : 1.201
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-150;1080) [m]
+                                   y in (-300;2200) [m]
+Length of Fourier bdy : left: 50[m]; right: 50[m]
+                                            bottom: 275[m]; top: 200[m]
+Number of Nodes :  Npx=256 Npy=512 total:131072
+        Grid size        : dx= 4.824[m]dy= 4.892[m]
+        Cutfrac k        : kx: 2; ky: 2
+Time interval         : (0;1800) [s]
+        Time step (dt): 0.5 [s]
+%
+Bathymetry            : User-defined
+Interp method         :2
+%
+Bottom friction:
+#1 User-defined; Friction Coef.= 0.02
+#2 User-defined; Friction Coef.= 0.02
+%
+Number of wall: 7
+#1 shape  :Rectangle; refl. coef   :1
+#2 shape  :Rectangle; refl. coef   :1
+#3 shape  :User-defined; refl. coef   :0.01
+#4 shape  :User-defined; refl. coef   :0.2
+#5 shape  :User-defined; refl. coef   :0.2
+#6 shape  :User-defined; refl. coef   :0.2
+#7 shape  :User-defined; refl. coef   :0.2
+%
+Influxing setting
+Influx method : Area (UniT)
+Position       : at y: 0 [m]; x in (0;930) [m]
+Time interv.  : t start: 0 [s]; t end: 1800 [s]; time step:0.5 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 3
+---------------------------------------------------------------------
+ODE statistic
+3590 successful steps
+291 failed attempts
+23287 function evaluations
+Partition  #2
+3587 successful steps
+424 failed attempts
+24067 function evaluations
+Partition  #3
+3589 successful steps
+491 failed attempts
+24481 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 7864.2223
+CompRel= 4.369
+==========================================================

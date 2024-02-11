@@ -1,0 +1,78 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  6h.49min.
+************************************************************************************
+%
+Project name: 2dBBr002_Irreg
+%
+User note   :Short crested Irregular wave breaking
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS3
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.7
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : JONSWAP
+       gamma                      : 3.3
+       spreading factor (s): 3
+       standard deviation  : 21.63 deg
+Significant wave Height (Hs)  : 3.998[m]
+Peak period (Tp)           : 6.977[s]
+Mean period (Tm01)     : 5.854[s]
+Direction       (degree) : 270[deg]
+Depth at influxing (h)    : 40[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.901[rad/s]
+      Mean frequency                           : 1.073[rad/s]
+      Peak wave-number (kp)              : 0.083
+      Peak wave-length                        : 75.8[m]
+      Peak phase speed                      : 10.864[m/s]
+      Peak group speed                      : 5.527[m/s]
+      Steepness (kp*(Hs./2))                : 0.166
+      Relative wave-length(lambda/h) : 1.895(Deep water)
+                                                 (kp*h)  : 3.316
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-800;800) [m]
+                                   y in (0;800) [m]
+Length of Fourier bdy : left: 100[m]; right: 100[m]
+                                            bottom: 100[m]; top: 50[m]
+Number of Nodes :  Npx=300 Npy=250 total:75000
+        Grid size        : dx= 5.351[m]dy= 3.213[m]
+        Cutfrac k        : kx: 6; ky: 6
+Time interval         : (0;300) [s]
+        Time step (dt): 0.5 [s]
+%
+Bathymetry            : Slope
+Interp method         :2
+%
+Influxing setting
+Influx method : Area (UniB)
+Straight line : start point at (x,y)=(-700,650)[m]; end point at (x,y)=(700,650) [m]
+Time interv.  : t start: 0 [s]; t end: 300 [s]; time step:0.5 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+1871 successful steps
+374 failed attempts
+13471 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 1877.1909
+CompRel= 6.2573
+==========================================================

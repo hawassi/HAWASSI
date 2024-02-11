@@ -1,0 +1,75 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 14.12.2017 time:  13h.54min.
+************************************************************************************
+%
+Project name: 2dB002HarmShoaling
+%
+User note   :Berkhoff82
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.7
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.023[m]
+Peak period (Tp)           : 1[s]
+Mean period (Tm01)     : 1[s]
+Direction       (degree) : 270[deg]
+Depth at influxing (h)    : 0.45[m]
+      Derived info:
+      Peak frequency (nu)                    : 6.283[rad/s]
+      Mean frequency                           : 6.283[rad/s]
+      Peak wave-number (kp)              : 4.21
+      Peak wave-length                        : 1.492[m]
+      Peak phase speed                      : 1.492[m/s]
+      Peak group speed                      : 0.874[m/s]
+      Steepness (kp*(Hs./2))                : 0.098
+      Relative wave-length(lambda/h) : 3.3162(Intermediate depth)
+                                                 (kp*h)  : 1.895
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-15;15) [m]
+                                   y in (-25;20) [m]
+Length of Fourier bdy : left: 5[m]; right: 5[m]
+                                            bottom: 10[m]; top: 10[m]
+Number of Nodes :  Npx=256 Npy=360 total:92160
+        Grid size        : dx= 0.118[m]dy= 0.125[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (0;60) [s]
+        Time step (dt): 0.05 [s]
+%
+Bathymetry            : User-defined
+Interp method         :2
+%
+Influxing setting
+Influx method : Area (UniB)
+Position       : at y: 10 [m]; x in (-10;10) [m]
+Time interv.  : t start: 0 [s]; t end: 60 [s]; time step:0.05 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+1465 successful steps
+2 failed attempts
+8803 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 555.2269
+CompRel= 9.2538
+==========================================================

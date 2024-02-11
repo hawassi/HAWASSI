@@ -1,0 +1,118 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  1h.52min.
+************************************************************************************
+%
+Project name: 2dF007BiHarm
+%
+User note   :MARIN1220-02-03-04 Bi Harmonic
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 2
+--------------------- Influxing-1---------------------
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.1[m]
+Peak period (Tp)           : 1.8[s]
+Mean period (Tm01)     : 1.781[s]
+Direction       (degree) : 0[deg]
+Depth at influxing (h)    : 5[m]
+      Derived info:
+      Peak frequency (nu)                    : 3.508[rad/s]
+      Mean frequency                           : 3.529[rad/s]
+      Peak wave-number (kp)              : 1.255
+      Peak wave-length                        : 5.008[m]
+      Peak phase speed                      : 2.796[m/s]
+      Peak group speed                      : 1.398[m/s]
+      Steepness (kp*(Hs./2))                : 0.125
+      Relative wave-length(lambda/h) : 1.0017(Deep water)
+                                                 (kp*h)  : 6.273
+--------------------------------------------------------------------
+--------------------- Influxing-2---------------------
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.1[m]
+Peak period (Tp)           : 2.2[s]
+Mean period (Tm01)     : 2.196[s]
+Direction       (degree) : 30[deg]
+Depth at influxing (h)    : 5[m]
+      Derived info:
+      Peak frequency (nu)                    : 2.88[rad/s]
+      Mean frequency                           : 2.861[rad/s]
+      Peak wave-number (kp)              : 0.846
+      Peak wave-length                        : 7.429[m]
+      Peak phase speed                      : 3.405[m/s]
+      Peak group speed                      : 1.709[m/s]
+      Steepness (kp*(Hs./2))                : 0.085
+      Relative wave-length(lambda/h) : 1.4859(Deep water)
+                                                 (kp*h)  : 4.229
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-15;185) [m]
+                                   y in (-15;60) [m]
+Length of Fourier bdy : left: 10[m]; right: 20[m]
+                                            bottom: 10[m]; top: 20[m]
+Number of Nodes :  Npx=1024 Npy=256 total:262144
+        Grid size        : dx= 0.196[m]dy= 0.294[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (0;120) [s]
+        Time step (dt): 0.1 [s]
+%
+Bathymetry            : Flat
+     Depth                 : 5[m]
+%
+Influxing setting
+--------------------- Influxing-1--------------------------------
+Influx method : Point (UniR)
+Straight line : start point at (x,y)=(0,11)[m]; end point at (x,y)=(0,27) [m]
+Time interv.  : t start: 0 [s]; t end: 120 [s]; time step:0.1 [s]
+--------------------------------------------------------------------
+--------------------- Influxing-2--------------------------------
+Influx method : Point (UniT)
+Straight line : start point at (x,y)=(10,0)[m]; end point at (x,y)=(150,0) [m]
+Time interv.  : t start: 0 [s]; t end: 120 [s]; time step:0.1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 6
+---------------------------------------------------------------------
+ODE statistic
+272 successful steps
+1 failed attempts
+1639 function evaluations
+Partition  #2
+355 successful steps
+0 failed attempts
+2131 function evaluations
+Partition  #3
+383 successful steps
+0 failed attempts
+2299 function evaluations
+Partition  #4
+415 successful steps
+0 failed attempts
+2491 function evaluations
+Partition  #5
+457 successful steps
+0 failed attempts
+2743 function evaluations
+Partition  #6
+493 successful steps
+0 failed attempts
+2959 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 3175.0846
+CompRel= 26.459
+==========================================================

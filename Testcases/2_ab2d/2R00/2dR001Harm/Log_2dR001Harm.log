@@ -1,0 +1,217 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 4.12.2020 time:  8h.34min.
+************************************************************************************
+%
+Project name: 2dR001Harm
+%
+User note   :
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.3[m]
+Peak period (Tp)           : 100[s]
+Mean period (Tm01)     : 100.005[s]
+Direction       (degree) : 0[deg]
+Depth at influxing (h)    : 50[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.063[rad/s]
+      Mean frequency                           : 0.063[rad/s]
+      Peak wave-number (kp)              : 0.003
+      Peak wave-length                        : 2207.407[m]
+      Peak phase speed                      : 22.073[m/s]
+      Peak group speed                      : 21.925[m/s]
+      Steepness (kp*(Hs./2))                : 0.001
+      Relative wave-length(lambda/h) : 44.1481(Shallow water)
+                                                 (kp*h)  : 0.142
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-4000;1500) [m]
+                                   y in (0;2) [m]
+Length of Fourier bdy : left: 1000[m]; right: 1000[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=2048 Npy=2 total:4096
+        Grid size        : dx= 2.687[m]dy= 2[m]
+        Cutfrac k        : kx: 6; ky: 6
+Time interval         : (0;1000) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : Shore
+     Depth            : max= 50[m]; min total depth=0.006[m]
+     Slope            : gradient=0.04, shore position : 0[m]
+Interp method         :3; mid Depth: 8.33[m]
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(-3000,0)[m]; end point at (x,y)=(-3000,2) [m]
+Time interv.  : t start: 0 [s]; t end: 1000 [s]; time step:1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+8312 successful steps
+1840 failed attempts
+60913 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 1096.8949
+CompRel= 1.0969
+==========================================================
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  18h.57min.
+************************************************************************************
+%
+Project name: 2dR001Harm
+%
+User note   :
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.3[m]
+Peak period (Tp)           : 100[s]
+Mean period (Tm01)     : 100.005[s]
+Direction       (degree) : 0[deg]
+Depth at influxing (h)    : 50[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.063[rad/s]
+      Mean frequency                           : 0.063[rad/s]
+      Peak wave-number (kp)              : 0.003
+      Peak wave-length                        : 2207.407[m]
+      Peak phase speed                      : 22.073[m/s]
+      Peak group speed                      : 21.925[m/s]
+      Steepness (kp*(Hs./2))                : 0.001
+      Relative wave-length(lambda/h) : 44.1481(Shallow water)
+                                                 (kp*h)  : 0.142
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-4000;1500) [m]
+                                   y in (0;2) [m]
+Length of Fourier bdy : left: 1000[m]; right: 1000[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=2048 Npy=2 total:4096
+        Grid size        : dx= 2.687[m]dy= 2[m]
+        Cutfrac k        : kx: 6; ky: 6
+Time interval         : (0;1000) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : Shore
+     Depth            : max= 50[m]; min total depth=0.006[m]
+     Slope            : gradient=0.04, shore position : 0[m]
+Interp method         :3; mid Depth: 8.33[m]
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(-3000,0)[m]; end point at (x,y)=(-3000,2) [m]
+Time interv.  : t start: 0 [s]; t end: 1000 [s]; time step:1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  19h.1min.
+************************************************************************************
+%
+Project name: 2dR001Harm
+%
+User note   :
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.3[m]
+Peak period (Tp)           : 100[s]
+Mean period (Tm01)     : 100.005[s]
+Direction       (degree) : 0[deg]
+Depth at influxing (h)    : 50[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.063[rad/s]
+      Mean frequency                           : 0.063[rad/s]
+      Peak wave-number (kp)              : 0.003
+      Peak wave-length                        : 2207.407[m]
+      Peak phase speed                      : 22.073[m/s]
+      Peak group speed                      : 21.925[m/s]
+      Steepness (kp*(Hs./2))                : 0.001
+      Relative wave-length(lambda/h) : 44.1481(Shallow water)
+                                                 (kp*h)  : 0.142
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-4000;1500) [m]
+                                   y in (0;2) [m]
+Length of Fourier bdy : left: 1000[m]; right: 1000[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=2048 Npy=2 total:4096
+        Grid size        : dx= 2.687[m]dy= 2[m]
+        Cutfrac k        : kx: 6; ky: 6
+Time interval         : (0;1000) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : Shore
+     Depth            : max= 50[m]; min total depth=0.006[m]
+     Slope            : gradient=0.04, shore position : 0[m]
+Interp method         :3; mid Depth: 8.33[m]
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(-3000,0)[m]; end point at (x,y)=(-3000,2) [m]
+Time interv.  : t start: 0 [s]; t end: 1000 [s]; time step:1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+8258 successful steps
+1806 failed attempts
+60385 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 1057.9123
+CompRel= 1.0579
+==========================================================

@@ -1,0 +1,78 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  6h.11min.
+************************************************************************************
+%
+Project name: 2dFBr002_Irreg
+%
+User note   :Short crested Irregular wave breaking
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.7
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : User-defined (signal)
+Significant wave Height (Hs)  : 2.999[m]
+Peak period (Tp)           : 5.173[s]
+Mean period (Tm01)     : 4.173[s]
+Depth at influxing (h)    : 40[m]
+      Derived info:
+      Peak frequency (nu)                    : 1.215[rad/s]
+      Mean frequency                           : 1.506[rad/s]
+      Peak wave-number (kp)              : 0.15
+      Peak wave-length                        : 41.773[m]
+      Peak phase speed                      : 8.076[m/s]
+      Peak group speed                      : 4.039[m/s]
+      Steepness (kp*(Hs./2))                : 0.226
+      Relative wave-length(lambda/h) : 1.0443(Deep water)
+                                                 (kp*h)  : 6.017
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-800;800) [m]
+                                   y in (0;800) [m]
+Length of Fourier bdy : left: 100[m]; right: 100[m]
+                                            bottom: 100[m]; top: 50[m]
+Number of Nodes :  Npx=600 Npy=300 total:180000
+        Grid size        : dx= 2.671[m]dy= 2.676[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (0;150) [s]
+        Time step (dt): 0.2 [s]
+%
+Bathymetry            : Flat
+     Depth                 : 40[m]
+%
+Influxing setting
+Influx method : Area (UniB)
+Straight line : start point at (x,y)=(-700,650)[m]; end point at (x,y)=(700,650) [m]
+Time interv.  : t start: 0 [s]; t end: 150 [s]; time step:0.2 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 2
+---------------------------------------------------------------------
+ODE statistic
+504 successful steps
+5 failed attempts
+3055 function evaluations
+Partition  #2
+796 successful steps
+197 failed attempts
+5959 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 1900.1766
+CompRel= 12.6678
+==========================================================

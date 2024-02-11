@@ -1,0 +1,89 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 22.5.2018 time:  11h.3min.
+************************************************************************************
+%
+Project name: 2dF007DraupnerSea
+%
+User note   :Boundary Assimilasi (only up to 15 s)
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS3
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+There is no influxed wave
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : Yes
+Shape      : Half-circle
+at radius:4750Smooth factor: 10
+Center position (x,y)=(0,0) [m]
+Propagation direction: South
+Wave info:
+Significant wave Height (Hs)  : 11.852[m]
+Peak period (Tp)           : 14.819[s]
+      Derived info:
+      Peak frequency (nu)                    : 0.424[rad/s]
+      Peak wave-number (kp)              : 0.021
+      Peak wave-length                        : 306.182[m]
+      Peak phase speed                      : 20.661[m/s]
+      Peak group speed                      : 13.697[m/s]
+      Steepness (kp*(Hs./2))                : 0.122
+     Relative wave-length(lambda/h) : 4.374(Intermediate depth)
+                                                 (kp*h)  : 1.436
+Time interv.  : t start: 0 [s]; t end: 15 [s]; time step:3 [s]
+--------------------------------------------------------------------
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-5200;5200) [m]
+                                   y in (-800;5200) [m]
+Length of Fourier bdy : left: 200[m]; right: 200[m]
+                                            bottom: 500[m]; top: 200[m]
+Number of Nodes :  Npx=1024 Npy=512 total:524288
+        Grid size        : dx= 10.166[m]dy= 11.742[m]
+        Cutfrac k        : kx: 6; ky: 6
+Time interval         : (0;100) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : Flat
+     Depth                 : 70[m]
+%
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+14 successful steps
+0 failed attempts
+85 function evaluations
+Bdy. assimilation  #2
+13 successful steps
+0 failed attempts
+79 function evaluations
+Bdy. assimilation  #3
+14 successful steps
+0 failed attempts
+85 function evaluations
+Bdy. assimilation  #4
+14 successful steps
+0 failed attempts
+85 function evaluations
+Bdy. assimilation  #5
+13 successful steps
+0 failed attempts
+79 function evaluations
+Bdy. assimilation  #6
+184 successful steps
+1 failed attempts
+1111 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 526.1368
+CompRel= 5.2614
+==========================================================

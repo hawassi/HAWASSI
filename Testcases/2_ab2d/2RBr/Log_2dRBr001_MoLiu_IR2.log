@@ -1,0 +1,304 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 4.12.2020 time:  17h.31min.
+************************************************************************************
+%
+Project name: 2dRBr001_MoLiu_IR2
+%
+User note   :Hs=4 Tp=12, OCEANIDE10
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.8
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : User-defined (signal)
+Significant wave Height (Hs)  : 3.33[m]
+Peak period (Tp)           : 10.205[s]
+Mean period (Tm01)     : 9.291[s]
+Depth at influxing (h)    : 76.7049[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.616[rad/s]
+      Mean frequency                           : 0.676[rad/s]
+      Peak wave-number (kp)              : 0.039
+      Peak wave-length                        : 161.763[m]
+      Peak phase speed                      : 15.851[m/s]
+      Peak group speed                      : 8.17[m/s]
+      Steepness (kp*(Hs./2))                : 0.065
+      Relative wave-length(lambda/h) : 2.1089(Intermediate depth)
+                                                 (kp*h)  : 2.979
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (0;2600) [m]
+                                   y in (0;100) [m]
+Length of Fourier bdy : left: 400[m]; right: 400[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=1024 Npy=2 total:2048
+        Grid size        : dx= 2.542[m]dy= 100[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (0;2500) [s]
+        Time step (dt): 0.313 [s]
+%
+Bathymetry            : Shore
+Interp method         :3; mid Depth: 20[m]
+A minimum total depth for shoreline: 0.08[m]
+%
+Bottom friction:
+#1 Position: x in (0;2600), y in (0;100); Friction Coef.= 0.012
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(640,0)[m]; end point at (x,y)=(640,100) [m]
+Time interv.  : t start: 0 [s]; t end: 2500 [s]; time step:0.313 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+208 successful steps
+16 failed attempts
+1345 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 18.6154
+CompRel= 0.44818
+==========================================================
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 4.12.2020 time:  17h.33min.
+************************************************************************************
+%
+Project name: 2dRBr001_MoLiu_IR2
+%
+User note   :Hs=4 Tp=12, OCEANIDE10
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.8
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : User-defined (signal)
+Significant wave Height (Hs)  : 3.33[m]
+Peak period (Tp)           : 10.205[s]
+Mean period (Tm01)     : 9.291[s]
+Depth at influxing (h)    : 76.7049[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.616[rad/s]
+      Mean frequency                           : 0.676[rad/s]
+      Peak wave-number (kp)              : 0.039
+      Peak wave-length                        : 161.763[m]
+      Peak phase speed                      : 15.851[m/s]
+      Peak group speed                      : 8.17[m/s]
+      Steepness (kp*(Hs./2))                : 0.065
+      Relative wave-length(lambda/h) : 2.1089(Intermediate depth)
+                                                 (kp*h)  : 2.979
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (0;2600) [m]
+                                   y in (0;100) [m]
+Length of Fourier bdy : left: 400[m]; right: 400[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=1024 Npy=2 total:2048
+        Grid size        : dx= 2.542[m]dy= 100[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (0;2500) [s]
+        Time step (dt): 0.313 [s]
+%
+Bathymetry            : Shore
+Interp method         :3; mid Depth: 20[m]
+A minimum total depth for shoreline: 0.08[m]
+%
+Bottom friction:
+#1 Position: x in (0;2600), y in (0;100); Friction Coef.= 0.012
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(640,0)[m]; end point at (x,y)=(640,100) [m]
+Time interv.  : t start: 0 [s]; t end: 2500 [s]; time step:0.313 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+46096 successful steps
+22902 failed attempts
+413989 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 4760.3109
+CompRel= 1.9042
+==========================================================
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  20h.27min.
+************************************************************************************
+%
+Project name: 2dRBr001_MoLiu_IR2
+%
+User note   :Hs=4 Tp=12, OCEANIDE10
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.8
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : User-defined (signal)
+Significant wave Height (Hs)  : 3.33[m]
+Peak period (Tp)           : 10.205[s]
+Mean period (Tm01)     : 9.291[s]
+Depth at influxing (h)    : 76.7049[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.616[rad/s]
+      Mean frequency                           : 0.676[rad/s]
+      Peak wave-number (kp)              : 0.039
+      Peak wave-length                        : 161.763[m]
+      Peak phase speed                      : 15.851[m/s]
+      Peak group speed                      : 8.17[m/s]
+      Steepness (kp*(Hs./2))                : 0.065
+      Relative wave-length(lambda/h) : 2.1089(Intermediate depth)
+                                                 (kp*h)  : 2.979
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (0;2600) [m]
+                                   y in (0;100) [m]
+Length of Fourier bdy : left: 400[m]; right: 400[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=1024 Npy=2 total:2048
+        Grid size        : dx= 2.542[m]dy= 100[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (0;2500) [s]
+        Time step (dt): 0.313 [s]
+%
+Bathymetry            : Shore
+Interp method         :3; mid Depth: 20[m]
+A minimum total depth for shoreline: 0.08[m]
+%
+Bottom friction:
+#1 Position: x in (0;2600), y in (0;100); Friction Coef.= 0.012
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(640,0)[m]; end point at (x,y)=(640,100) [m]
+Time interv.  : t start: 0 [s]; t end: 2500 [s]; time step:0.313 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 5.12.2020 time:  20h.28min.
+************************************************************************************
+%
+Project name: 2dRBr001_MoLiu_IR2
+%
+User note   :Hs=4 Tp=12, OCEANIDE10
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS2
+Dispersion Model    : Exact
+Breaking             : 
+   Initiation           : U/C= 0.8
+   Termination     : uF/uI= 0.2, T*/Tp= 0.5
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : User-defined (signal)
+Significant wave Height (Hs)  : 3.705[m]
+Peak period (Tp)           : 10.205[s]
+Mean period (Tm01)     : 9.214[s]
+Depth at influxing (h)    : 76.7049[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.616[rad/s]
+      Mean frequency                           : 0.682[rad/s]
+      Peak wave-number (kp)              : 0.039
+      Peak wave-length                        : 161.763[m]
+      Peak phase speed                      : 15.851[m/s]
+      Peak group speed                      : 8.17[m/s]
+      Steepness (kp*(Hs./2))                : 0.072
+      Relative wave-length(lambda/h) : 2.1089(Intermediate depth)
+                                                 (kp*h)  : 2.979
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (0;2600) [m]
+                                   y in (0;100) [m]
+Length of Fourier bdy : left: 400[m]; right: 400[m]
+                                            bottom: 0[m]; top: 0[m]
+Number of Nodes :  Npx=1024 Npy=2 total:2048
+        Grid size        : dx= 2.542[m]dy= 100[m]
+        Cutfrac k        : kx: 4; ky: 4
+Time interval         : (500;3000) [s]
+        Time step (dt): 0.313 [s]
+%
+Bathymetry            : Shore
+Interp method         :3; mid Depth: 20[m]
+A minimum total depth for shoreline: 0.08[m]
+%
+Bottom friction:
+#1 Position: x in (0;2600), y in (0;100); Friction Coef.= 0.012
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(640,0)[m]; end point at (x,y)=(640,100) [m]
+Time interv.  : t start: 500 [s]; t end: 3000 [s]; time step:0.313 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+33544 successful steps
+13159 failed attempts
+280219 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 3386.3324
+CompRel= 1.3546
+==========================================================

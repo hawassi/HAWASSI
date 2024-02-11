@@ -1,0 +1,154 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 3.12.2020 time:  7h.35min.
+************************************************************************************
+%
+Project name: 2dB001HarmRefr
+%
+User note   :Refracted Harmonic wave
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS1
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.5[m]
+Peak period (Tp)           : 14[s]
+Mean period (Tm01)     : 13.599[s]
+Direction       (degree) : 0[deg]
+Depth at influxing (h)    : 30[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.456[rad/s]
+      Mean frequency                           : 0.462[rad/s]
+      Peak wave-number (kp)              : 0.03
+      Peak wave-length                        : 211.508[m]
+      Peak phase speed                      : 15.334[m/s]
+      Peak group speed                      : 12.399[m/s]
+      Steepness (kp*(Hs./2))                : 0.015
+      Relative wave-length(lambda/h) : 7.0503(Intermediate depth)
+                                                 (kp*h)  : 0.891
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (0;3000) [m]
+                                   y in (-250;1500) [m]
+Length of Fourier bdy : left: 245[m]; right: 245[m]
+                                            bottom: 245[m]; top: 245[m]
+Number of Nodes :  Npx=512 Npy=256 total:131072
+        Grid size        : dx= 5.871[m]dy= 6.863[m]
+        Cutfrac k        : kx: 2; ky: 2
+Time interval         : (0;400) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : User-defined
+Interp method         :2
+%
+Number of wall: 2
+#1 shape  :Rectangle; Method  :Energy truncation; Type  :Uniform; Refl. coef   :1
+#2 shape  :Rectangle; Method  :Energy truncation; Type  :Uniform; Refl. coef   :1
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(400,0)[m]; end point at (x,y)=(400,1250) [m]
+Time interv.  : t start: 0 [s]; t end: 400 [s]; time step:1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+157 successful steps
+0 failed attempts
+943 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 121.9971
+CompRel= 4.1483
+==========================================================
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 3.12.2020 time:  7h.39min.
+************************************************************************************
+%
+Project name: 2dB001HarmRefr
+%
+User note   :Refracted Harmonic wave
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS1
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 0.5[m]
+Peak period (Tp)           : 14[s]
+Mean period (Tm01)     : 13.599[s]
+Direction       (degree) : 0[deg]
+Depth at influxing (h)    : 30[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.456[rad/s]
+      Mean frequency                           : 0.462[rad/s]
+      Peak wave-number (kp)              : 0.03
+      Peak wave-length                        : 211.508[m]
+      Peak phase speed                      : 15.334[m/s]
+      Peak group speed                      : 12.399[m/s]
+      Steepness (kp*(Hs./2))                : 0.015
+      Relative wave-length(lambda/h) : 7.0503(Intermediate depth)
+                                                 (kp*h)  : 0.891
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (0;3000) [m]
+                                   y in (-250;1500) [m]
+Length of Fourier bdy : left: 245[m]; right: 245[m]
+                                            bottom: 245[m]; top: 245[m]
+Number of Nodes :  Npx=512 Npy=256 total:131072
+        Grid size        : dx= 5.871[m]dy= 6.863[m]
+        Cutfrac k        : kx: 2; ky: 2
+Time interval         : (0;400) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : User-defined
+Interp method         :2
+%
+Number of wall: 2
+#1 shape  :Rectangle; Method  :Energy truncation; Type  :Uniform; Refl. coef   :1
+#2 shape  :Rectangle; Method  :Energy truncation; Type  :Uniform; Refl. coef   :1
+%
+Influxing setting
+Influx method : Area (UniR)
+Straight line : start point at (x,y)=(400,0)[m]; end point at (x,y)=(400,1250) [m]
+Time interv.  : t start: 0 [s]; t end: 400 [s]; time step:1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+1807 successful steps
+5 failed attempts
+10873 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 1173.7895
+CompRel= 2.9345
+==========================================================

@@ -1,0 +1,77 @@
+************************************************************************************
+HAWASSI-AB 2D simulation diary, date: 22.5.2018 time:  9h.38min.
+************************************************************************************
+%
+Project name: 2dF002HarmDifrac
+%
+User note   :Diffracted harmonic wave above flat bottom
+%
+MODEL DESCRIPTION :
+Dynamic Model        : HS1
+Dispersion Model    : Exact
+Breaking                    : No
+Current                      : No
+%
+INFLUX DESCRIPTION : 
+Number of influxing        : 1
+Signal type                     : Harmonic
+Amplitude (A)                 : 1[m]
+Peak period (Tp)           : 10.75[s]
+Mean period (Tm01)     : 10.783[s]
+Direction       (degree) : 90[deg]
+Depth at influxing (h)    : 10[m]
+      Derived info:
+      Peak frequency (nu)                    : 0.578[rad/s]
+      Mean frequency                           : 0.583[rad/s]
+      Peak wave-number (kp)              : 0.062
+      Peak wave-length                        : 101.534[m]
+      Peak phase speed                      : 9.34[m/s]
+      Peak group speed                      : 8.331[m/s]
+      Steepness (kp*(Hs./2))                : 0.062
+      Relative wave-length(lambda/h) : 10.1534(Intermediate depth)
+                                                 (kp*h)  : 0.619
+--------------------------------------------------------------------
+%
+INITIAL WAVE CONDITIONS : 
+Initial condition        : Zero
+%
+BOUNDARY ASSIMILATION : 
+Boundary assimilation      : No
+%
+NUMERICAL SETTINGS : 
+Spatial interval      : x in (-1200;1200) [m]
+                                   y in (-200;1200) [m]
+Length of Fourier bdy : left: 190[m]; right: 200[m]
+                                            bottom: 100[m]; top: 200[m]
+Number of Nodes :  Npx=384 Npy=192 total:73728
+        Grid size        : dx= 6.266[m]dy= 7.33[m]
+        Cutfrac k        : kx: 2; ky: 2
+Time interval         : (0;250) [s]
+        Time step (dt): 1 [s]
+%
+Bathymetry            : Flat
+     Depth                 : 10[m]
+%
+Number of wall: 2
+#1 shape  :Rectangle; Method  :Influxing; Type  :Uniform; Refl. coef   :1
+#2 shape  :Rectangle; Method  :Influxing; Type  :Uniform; Refl. coef   :1
+%
+Influxing setting
+Influx method : Area (UniT)
+Straight line : start point at (x,y)=(-1000,-50)[m]; end point at (x,y)=(0,-50) [m]
+Time interv.  : t start: 0 [s]; t end: 250 [s]; time step:1 [s]
+--------------------------------------------------------------------
+%
+ODE SETTING:
+ODE solver           : ode45
+Relative error tol.  : 0.001
+No of Partition      : 1
+---------------------------------------------------------------------
+ODE statistic
+684 successful steps
+3 failed attempts
+4123 function evaluations
+--------------------------------------------------------------------
+Timeodesolver= 197.8249
+CompRel= 0.7913
+==========================================================
