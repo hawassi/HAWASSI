@@ -112,7 +112,7 @@ for i=1:Nship
     shapeXcZc(i,:)=shapeXcZcI.';
     dxshapeXcZc(i,:)= dxshapeXcZcO.';%% for barge: delta function outside for calculating fluid momentum
     shapeXcZ0(i,:)=shapeXcZ0I.';
-    Chi(i,:)    = heaviside(-sign(shapeXcZcI)-10^(-12));
+    Chi(i,:)    = Heaviside(-sign(shapeXcZcI)-10^(-12));
   
     SChi        = SChi+Chi(i,:);
     indxL       = find(Chi(i,:),1,'first')-1;
@@ -139,7 +139,7 @@ for i=1:Nship
     SChiSl        = SChiSl+ChiSl(i,:);
     
     Mass(i)     = -trapz(x,min(0,shapeXcZ0I.'));
-    LWL(i)      = trapz(x,heaviside(-sign(shapeXcZ0I.')-10^-12));
+    LWL(i)      = trapz(x,Heaviside(-sign(shapeXcZ0I.')-10^-12));
     if strcmpi(shippar.data(i,2),'Pitch')||strcmpi(shippar.data(i,2),'Free')         
     MIner(i)=Mass(i) .*Gyradius(i).^2;
     end

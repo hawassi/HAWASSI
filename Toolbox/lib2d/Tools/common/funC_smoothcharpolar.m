@@ -5,9 +5,9 @@ dtheta=deg2rad(0.3);
 theta=0:dtheta:pi;
 switch side
     case 'right'
-        char1D=heaviside(r-r0).*sin((r-r0)*pi/(r1-r0)/2).^2.*heaviside(r1-r)+heaviside(r-r1);
+        char1D=funC_Heaviside(r-r0).*sin((r-r0)*pi/(r1-r0)/2).^2.*funC_Heaviside(r1-r)+funC_Heaviside(r-r1);
     case 'left'
-        char1D=1-(heaviside(r-r0).*sin((r-r0)*pi/(r1-r0)/2).^2.*heaviside(r1-r)+heaviside(r-r1));
+        char1D=1-(funC_Heaviside(r-r0).*sin((r-r0)*pi/(r1-r0)/2).^2.*funC_Heaviside(r1-r)+funC_Heaviside(r-r1));
 end
 
 chiPol=zeros(length(theta),length(r));

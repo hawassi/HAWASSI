@@ -22,7 +22,7 @@ nuz=0;nux=0;
  for i=1:Nship
     shapeXcZ0         = circshift(shapeX0Z0(i,:),[floor(SXc(i)/dx),0]);
     shapeXcZc_shifted = (shapeXcZ0+SZc(i));
-    Chi(i,:)    = heaviside(-sign(shapeXcZ0(i,:))-10^(-12));
+    Chi(i,:)    = Heaviside(-sign(shapeXcZ0(i,:))-10^(-12));
     shapeXcZc(i,:)=shapeXcZc_shifted.*Chi(i,:);
     dxshapeXcZc(i,:)= gradient(shapeXcZc(i,:),dx);
     indxL       = find(Chi(i,:),1,'first')-1;

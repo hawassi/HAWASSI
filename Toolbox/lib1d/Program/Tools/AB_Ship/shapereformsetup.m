@@ -61,7 +61,7 @@ for i=1:Nship
         
         shapeXcZc_shifted(indx1:indx2)=interp1(shapeXcZcdati(:,1),shapeXcZcdati(:,2),x(indx1:indx2));
         
-        Chi(i,:)           = heaviside(-sign(shapeXcZc_shifted(i,:))-10^(-12));
+        Chi(i,:)           = Heaviside(-sign(shapeXcZc_shifted(i,:))-10^(-12));
         shapeXcZc(i,:)     = shapeXcZc_shifted.*Chi(i,:);
         dxshapeXcZc(i,:)   = funOprt_FDGradient1dShip(shapeXcZc(i,:),x,SXc(i)+shippar.form.xShip(i,2));%gradient(shapeXcZc(i,:),dx);
         indxL       = find(Chi(i,:),1,'first')-1;
@@ -86,7 +86,7 @@ for i=1:Nship
         end
         shapeXcZc_shifted  = (shapeXcZ0I+SZc(i));
         
-        Chi(i,:)           = heaviside(-sign(shapeXcZ0I(i,:))-10^(-12));
+        Chi(i,:)           = Heaviside(-sign(shapeXcZ0I(i,:))-10^(-12));
         shapeXcZc(i,:)     = shapeXcZc_shifted.*Chi(i,:);
         dxshapeXcZc(i,:)   = funOprt_FDGradient1dShip(shapeXcZc(i,:),x,SXc(i)+shippar.form.xShip(i,2));%gradient(shapeXcZc(i,:),dx);
         indxL       = find(Chi(i,:),1,'first')-1;

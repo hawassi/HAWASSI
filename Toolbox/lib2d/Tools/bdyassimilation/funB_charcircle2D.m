@@ -7,11 +7,11 @@ b=r0+N*(x(2)-x(1));
 
 switch side
     case 'right'
-%         char1D=heaviside(r-r0);
-        char1D=heaviside(r-a).*sin((r-a)*pi/(b-a)/2).^2.*heaviside(b-r)+heaviside(r-b);
+%         char1D=funC_Heaviside(r-r0);
+        char1D=funC_Heaviside(r-a).*sin((r-a)*pi/(b-a)/2).^2.*funC_Heaviside(b-r)+funC_Heaviside(r-b);
     case 'left'
-%         char1D=heaviside(r0-r);
-        char1D=1-(heaviside(r-a).*sin((r-a)*pi/(b-a)/2).^2.*heaviside(b-r)+heaviside(r-b));
+%         char1D=funC_Heaviside(r0-r);
+        char1D=1-(funC_Heaviside(r-a).*sin((r-a)*pi/(b-a)/2).^2.*funC_Heaviside(b-r)+funC_Heaviside(r-b));
 end
 
 chiPol=zeros(length(theta),length(r));
